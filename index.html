@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MPI Matematika SMP — Fase D | Kurikulum Merdeka</title>
+<meta name="description" content="Media Pembelajaran Interaktif Matematika SMP Fase D, Kurikulum Merdeka, pendekatan Pembelajaran Mendalam. Prototipe: Bilangan Bulat Kelas 7.">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="wrap" style="padding:0">
+    <p><strong>MPI MATEMATIKA SMP &middot; FASE D &middot; KURIKULUM MERDEKA</strong></p>
+    <h1>Belajar Matematika yang Berkesadaran, Bermakna, dan Menggembirakan</h1>
+    <p>Untuk siswa dan guru. Mulai dari prototipe Kelas 7: Bilangan Bulat (B.1&ndash;B.2). Materi lain ditandai <em>Segera Hadir</em> sampai dibuat dengan template yang sama.</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="card">
+    <h2>Pilih Mode</h2>
+    <div class="row no-print">
+      <button class="btn secondary" data-mode-btn="siswa" aria-pressed="true">Mode Siswa</button>
+      <button class="btn secondary" data-mode-btn="guru" aria-pressed="false">Mode Guru</button>
+    </div>
+    <label for="namaInput">Nama panggilan (opsional, hanya tersimpan di perangkat ini)</label>
+    <input type="text" id="namaInput" placeholder="Contoh: Dita">
+    <p class="muted"><span id="haloText">Halo!</span> Situs ini statis untuk GitHub Pages: tanpa akun dan tanpa server, jadi riwayatmu tidak dikirim ke mana-mana.</p>
+  </div>
+
+  <section class="card">
+    <h2>Dasbor Belajar Saya</h2>
+    <div class="grid two">
+      <div><div class="stat" id="dashProgress">0%</div><p class="muted">Skor terbaik Kuis Bilangan Bulat</p><div class="progress"><div id="dashBar" style="width:0%"></div></div><p id="dashStatus">Belum mulai kuis</p></div>
+      <div><p><strong>Percobaan kuis:</strong> <span id="dashAttempts">0</span></p><p><strong>Terakhir belajar:</strong> <span id="dashLast">Belum ada kuis</span></p><p><strong>Skor terbaik:</strong> <span id="dashBest">—</span></p></div>
+    </div>
+    <div class="row no-print">
+      <a class="btn" href="bilangan-bulat.html">Lanjutkan: Bilangan Bulat</a>
+      <button class="btn secondary exportBtn">Ekspor Riwayat (JSON)</button>
+      <button class="btn secondary clearBtn">Hapus Riwayat di Perangkat Ini</button>
+    </div>
+    <h3>Riwayat Kuis Bilangan Bulat</h3>
+    <table><thead><tr><th>Tanggal</th><th>Materi</th><th>Skor</th><th>%</th></tr></thead><tbody id="historyList"><tr><td colspan="4">Memuat…</td></tr></tbody></table>
+    <p class="muted">Untuk dikirim ke guru: tekan <em>Ekspor Riwayat</em>, lalu kirim berkasnya ke guru. Guru tidak bisa melihat progresmu secara real time dari situs statis ini.</p>
+  </section>
+
+  <section class="card guru-only">
+    <h2>Dasbor Guru</h2>
+    <p>Mode guru menampilkan panduan ATP/TP, alokasi JP, miskonsepsi, diferensiasi, dan LKPD di halaman materi. Di halaman Bilangan Bulat, buka bagian <a href="bilangan-bulat.html#guru">Panduan Guru</a>.</p>
+    <p><strong>Cara memakai di kelas:</strong> tampilkan simulasi garis bilangan dan GeoGebra di proyektor, minta siswa mencoba sendiri di HP, lalu tutup dengan kuis formatif dan refleksi. Minta siswa mengekspor riwayatnya sebagai bukti belajar.</p>
+    <p><strong>Sumber:</strong> ATP MGMP Matematika SMP Kabupaten Lampung Tengah, Tahun Pelajaran 2026/2027, Fase D.</p>
+  </section>
+
+  <section class="card">
+    <h2>Peta Belajar Fase D</h2>
+    <h3>Kelas 7 — Semester 1</h3>
+    <p><a class="btn small" href="bilangan-bulat.html">Bilangan Bulat</a> <span class="badge">B.1 &middot; B.2</span> <span class="badge">Prototipe aktif</span><br>
+    <span class="badge soon">Bilangan Rasional — B.3 — Segera Hadir</span>
+    <span class="badge soon">Aritmetika Sosial — B.2, B.3 — Segera Hadir</span>
+    <span class="badge soon">Perbandingan — B.4 — Segera Hadir</span></p>
+    <h3>Kelas 7 — Semester 2</h3>
+    <p><span class="badge soon">Bentuk Aljabar — A.1</span> <span class="badge soon">Garis dan Sudut — G.1</span> <span class="badge soon">Kesebangunan — G.2</span> <span class="badge soon">Kekongruenan — G.3</span> <span class="badge soon">Data dan Diagram — D.1, D.2</span></p>
+    <h3>Kelas 8</h3>
+    <p class="muted">Semester 1: Bilangan Berpangkat (B.5), Bentuk Akar (B.6), Bentuk Baku (B.7), Teorema Pythagoras (G.4), PLSV (A.2), PtLSV (A.3). Semester 2: Pola Bilangan (A.4), Relasi dan Fungsi (A.5), Persamaan Garis Lurus (A.6), Statistika (D.3, D.4). Semua Segera Hadir.</p>
+    <h3>Kelas 9</h3>
+    <p class="muted">Semester 1: SPLDV (A.7), Bangun Ruang Sisi Datar (G.5, P.1), Lingkaran (P.2), Bangun Ruang Sisi Lengkung (P.3). Semester 2: Transformasi (G.6), Peluang (D.5, D.6). Semua Segera Hadir.</p>
+  </section>
+</main>
+
+<footer>
+  <p>Prototipe MPI Matematika SMP &middot; ATP MGMP Matematika SMP Kab. Lampung Tengah 2026/2027 &middot; Dibuat sebagai situs statis untuk GitHub Pages.</p>
+</footer>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

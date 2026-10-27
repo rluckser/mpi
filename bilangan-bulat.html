@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bilangan Bulat (B.1–B.2) — Kelas 7 Semester 1 | MPI Matematika</title>
+<meta name="description" content="Operasi hitung bilangan bulat dan masalah sehari-hari serta literasi finansial. Simulasi garis bilangan, GeoGebra, latihan, kuis, dan refleksi.">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="wrap" style="padding:0">
+    <p><strong>KELAS 7 &middot; SEMESTER 1 &middot; ELEMEN BILANGAN</strong></p>
+    <h1>Bilangan Bulat</h1>
+    <p><span class="badge">B.1</span> <span class="badge">B.2</span> Membandingkan, mengurutkan, menghitung, dan memakai bilangan bulat dalam kehidupan sehari-hari.</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <nav class="top no-print">
+    <a class="btn secondary" href="index.html">← Beranda &amp; Dasbor</a>
+    <button class="btn secondary" data-mode-btn="siswa">Mode Siswa</button>
+    <button class="btn secondary" data-mode-btn="guru">Mode Guru</button>
+    <a class="btn secondary" href="#guru">Panduan Guru</a>
+  </nav>
+
+  <section class="card">
+    <h2>1. Tujuan Pembelajaran</h2>
+    <p><strong>B.1:</strong> Menjelaskan, menyatakan, membandingkan, mengurutkan, dan menentukan hasil operasi hitung (penjumlahan, pengurangan, perkalian, dan pembagian) bilangan bulat.</p>
+    <p><strong>B.2:</strong> Menyelesaikan permasalahan keseharian yang melibatkan konsep bilangan bulat termasuk berkaitan dengan penguatan literasi finansial.</p>
+    <p class="muted">Alokasi pada tabel ATP: B.1 = 10 JP, B.2 = 14 JP. Target latihan pada prototipe ini: skor kuis 70%.</p>
+    <h3>Pemantik: di mana bilangan negatif muncul?</h3>
+    <div class="grid two">
+      <div><strong>🌡️ Suhu</strong><p class="muted">Suhu −3°C berarti 3 derajat di bawah nol. Kalau naik 5°C, suhunya menjadi 2°C.</p></div>
+      <div><strong>💰 Utang dan saldo</strong><p class="muted">Saldo −Rp25.000 berarti kamu masih berutang Rp25.000, bukan punya Rp25.000.</p></div>
+      <div><strong>🏢 Lantai gedung</strong><p class="muted">Lantai dasar = 0, lantai 2 di atas, dan lantai −2 berarti 2 lantai di bawah tanah.</p></div>
+      <div><strong>📈 Untung dan rugi</strong><p class="muted">Untung ditulis positif, rugi ditulis negatif. Keuntungan −Rp25.000 artinya rugi Rp25.000.</p></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>2. Eksplorasi: Garis Bilangan Interaktif</h2>
+    <p>Coba sendiri. Isi bilangan pertama, pilih operasi, isi bilangan kedua, lalu tekan tombol.</p>
+    <div class="row no-print">
+      <label>Bilangan pertama <input type="number" id="simA" value="-2" min="-12" max="12"></label>
+      <label>Operasi <select id="simOp"><option value="+">+</option><option value="-">−</option></select></label>
+      <label>Bilangan kedua <input type="number" id="simB" value="5" min="-12" max="12"></label>
+      <button class="btn" id="simBtn">Tunjukkan Langkah</button>
+    </div>
+    <div class="numline" id="numberLine" aria-label="Garis bilangan dari -12 sampai 12"></div>
+    <div id="simResult" class="feedback good">Contoh: −2 + 5 = 3. Dari −2, bergerak ke kanan 5 langkah dan berhenti di 3.</div>
+    <p><strong>Aturan cepat:</strong> tambah bilangan positif = geser kanan; tambah bilangan negatif = geser kiri; kurang bilangan positif = geser kiri; kurang bilangan negatif = geser kanan (berbalik arah).</p>
+    <h3>Membandingkan dan mengurutkan</h3>
+    <p>Semakin ke kanan, nilainya semakin besar. Jadi −1 &gt; −5, dan 0 &gt; −4. Contoh urutan dari terkecil: −6, −2, 0, 3, 7.</p>
+    <h3>Aturan tanda perkalian dan pembagian</h3>
+    <table><tr><th>Tanda</th><th>Hasil</th><th>Contoh</th></tr>
+    <tr><td>positif × positif</td><td>positif</td><td>3 × 4 = 12</td></tr>
+    <tr><td>negatif × negatif</td><td>positif</td><td>(−3) × (−4) = 12</td></tr>
+    <tr><td>positif × negatif</td><td>negatif</td><td>3 × (−4) = −12</td></tr>
+    <tr><td>pembagian mengikuti aturan tanda yang sama</td><td>—</td><td>−36 ÷ 9 = −4; −36 ÷ (−9) = 4</td></tr></table>
+  </section>
+
+  <section class="card">
+    <h2>3. GeoGebra: Garis Bilangan</h2>
+    <p>Geser penanda pada GeoGebra di bawah ini. Coba buat lompatan dari −4 ke 3, lalu dari 5 ke −2. Apa yang berubah pada lompatannya?</p>
+    <iframe class="geogebra" title="GeoGebra Number Line" src="https://www.geogebra.org/material/iframe/id/CfJPUyfJ" allowfullscreen></iframe>
+    <p class="muted">Sumber GeoGebra: <a href="https://mat.geogebra.org/m/CfJPUyfJ">Number Line (CfJPUyfJ)</a>. Kalau sematan tidak termuat karena jaringan, buka tautan itu langsung. Simulasi garis bilangan di atas tetap bisa dipakai tanpa GeoGebra.</p>
+    <p><strong>Tugas eksplorasi:</strong> (a) Tunjukkan −4 + 7 dengan lompatan. (b) Tunjukkan 3 − 8. (c) Jelaskan dengan bahasamu sendiri mengapa 3 − (−2) = 5.</p>
+  </section>
+
+  <section class="card">
+    <h2>4. Literasi Finansial: Contoh B.2</h2>
+    <p><strong>Saldo:</strong> Sisa uang Rp80.000, lalu membeli buku Rp110.000. Saldo = 80.000 − 110.000 = −Rp30.000 (berutang Rp30.000).</p>
+    <p><strong>Untung/rugi:</strong> Modal Rp150.000, penjualan Rp180.000 → untung Rp30.000. Kalau penjualan hanya Rp120.000 → 120.000 − 150.000 = −Rp30.000 (rugi Rp30.000).</p>
+    <p><strong>Utang bertahap:</strong> Utang awal Rp50.000 ditulis −50.000. Setelah membayar Rp20.000, utangnya menjadi −50.000 + 20.000 = −Rp30.000.</p>
+  </section>
+
+  <section class="card no-print">
+    <h2>5. Latihan Bebas (tidak masuk riwayat)</h2>
+    <p id="practiceQ">Memuat soal…</p>
+    <p id="practiceWhy" style="display:none"></p>
+    <div class="row">
+      <label>Jawabanmu <input type="number" id="practiceAns" placeholder="Tulis bilangan bulat"></label>
+      <button class="btn" id="checkPracticeBtn">Cek Jawaban</button>
+      <button class="btn secondary" id="newPracticeBtn">Soal Baru</button>
+    </div>
+    <div id="practiceFeedback"></div>
+  </section>
+
+  <section class="card">
+    <h2>6. Kuis Formatif B.1–B.2</h2>
+    <p>Jawab semua soal. Umpan balik muncul langsung setelah kamu memilih. Skor akhir tersimpan otomatis di perangkat ini.</p>
+    <p><strong id="quizProgress">Terjawab: 0/10</strong></p>
+    <div id="quizBox"></div>
+    <div class="row no-print">
+      <button class="btn" id="finishQuiz" disabled>Selesai &amp; Simpan Skor</button>
+      <button class="btn secondary exportBtn">Ekspor Riwayat</button>
+    </div>
+    <div id="quizResult"></div>
+    <div id="quizHistory"></div>
+  </section>
+
+  <section class="card">
+    <h2>7. Refleksi</h2>
+    <p>Tulis dengan bahasamu sendiri. Refleksi ini tersimpan di perangkatmu.</p>
+    <label for="refleksiInput">Apa yang sudah kamu pahami? Apa yang masih sulit? Beri satu contoh bilangan negatif dari kehidupanmu.</label>
+    <textarea id="refleksiInput" placeholder="Contoh: Saya sudah paham … Saya masih bingung … Contoh dari hidup saya …"></textarea>
+    <p class="muted">Pembelajaran Mendalam: berkesadaran (kamu tahu apa yang sudah dan belum dipahami), bermakna (contoh dari hidupmu), menggembirakan (kamu mencoba, bukan hanya membaca).</p>
+  </section>
+
+  <section class="card guru-only" id="guru">
+    <h2>Panduan Guru — Bilangan Bulat</h2>
+    <div class="guru-note">
+      <p><strong>Capaian Pembelajaran (elemen Bilangan, ringkas):</strong> membaca, menulis, dan membandingkan bilangan bulat serta menerapkan operasi aritmetika pada bilangan real, termasuk literasi finansial.</p>
+      <p><strong>Alokasi ATP:</strong> B.1 = 10 JP, B.2 = 14 JP.</p>
+      <p><strong>Miskonsepsi umum:</strong> (1) mengira −7 &gt; −3 karena 7 &gt; 3; (2) mengira −(−4) = −4; (3) salah tanda pada perkalian/pembagian; (4) mengira saldo negatif berarti masih punya uang.</p>
+      <p><strong>Diferensiasi:</strong> dasar — garis bilangan dan operasi dua bilangan; menengah — operasi campuran dan tanda kurung; lanjut — soal finansial multi-langkah dan membuat soal sendiri.</p>
+      <p><strong>Asesmen:</strong> observasi saat eksplorasi GeoGebra, latihan bebas, kuis formatif 10 soal, dan refleksi siswa.</p>
+    </div>
+    <div class="row no-print"><button class="btn secondary printBtn">Cetak LKPD / Halaman Ini</button></div>
+    <p class="muted">LKPD cetak: cetak halaman ini, lalu minta siswa mengerjakan bagian GeoGebra dan refleksi di buku atau lembar terpisah bila perangkat terbatas.</p>
+  </section>
+  <p class="card siswa-only-note muted">Bagian Panduan Guru hanya tampil dalam Mode Guru. Aktifkan Mode Guru di atas untuk melihatnya.</p>
+</main>
+
+<footer>
+  <p><a href="index.html">← Kembali ke Beranda MPI</a> &middot; Sumber ATP: MGMP Matematika SMP Kab. Lampung Tengah 2026/2027.</p>
+</footer>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
