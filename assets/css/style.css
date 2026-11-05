@@ -21,7 +21,15 @@ textarea{min-height:90px}.row{display:flex;gap:10px;flex-wrap:wrap;align-items:c
 .guru-note{background:#fffbeb;border:1px solid #fde68a;border-radius:12px;padding:14px;margin:12px 0}
 body[data-mode="siswa"] .guru-only{display:none}body[data-mode="guru"] .siswa-only-note{display:none}
 iframe.geogebra{width:100%;height:480px;border:1px solid var(--line);border-radius:12px}
+/* B.3 saja: applet "Where is the Fraction?" (WT46bNtV) lebih lebar dari ukuran
+   sematan default 640px, sehingga label 1 dan 2 terpotong. Beri ukuran eksplisit
+   1200x560 lewat parameter embed (lebar minimum agar 0 dan 2 muat dengan panah
+   ujung), dan bungkus agar bisa digeser di layar kecil. Label 1 baru muncul
+   setelah siswa mencentang Show hash marks lalu Show labels — lihat Tips di
+   halaman B.3. */
+.geogebra-wrap{overflow-x:auto}
+iframe.geogebra-rasional{width:100%;min-width:1200px;height:560px}
 table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:8px;border-bottom:1px solid var(--line);vertical-align:top}
 footer{padding:20px;color:var(--muted);text-align:center}
-@media(max-width:600px){.wrap{padding:14px}.card{padding:16px}iframe.geogebra{height:380px}}
+@media(max-width:600px){.wrap{padding:14px}.card{padding:16px}iframe.geogebra{height:380px}iframe.geogebra-rasional{height:560px}}
 @media print{.no-print,nav.top{display:none!important}body{background:#fff}.card{box-shadow:none;border-color:#999}}
