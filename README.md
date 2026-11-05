@@ -11,7 +11,15 @@ pendekatan Pembelajaran Mendalam. Situs statis, siap untuk GitHub Pages.
     hasil operasi hitung bilangan bulat.
   - **B.2** — menyelesaikan permasalahan keseharian yang melibatkan konsep bilangan
     bulat, termasuk penguatan literasi finansial.
-- `assets/css/style.css` dan `assets/js/main.js` — tampilan dan logika bersama.
+- `bilangan-rasional.html` — materi lengkap Kelas 7 Semester 1:
+  - **B.3** — mengidentifikasi, menyatakan, membandingkan, menentukan operasi
+    hitung, menaksir, dan melakukan estimasi bilangan rasional serta
+    menyelesaikan permasalahan kontekstual termasuk literasi finansial.
+  - Catatan JP dibaca apa adanya: tabel ATP menulis B.3 = 22 JP (Bilangan
+    Rasional dan Aritmetika Sosial), sedangkan distribusi materi menulis
+    Bilangan Rasional = 16 JP dan Aritmetika Sosial = 12 JP.
+- `assets/css/style.css`, `assets/js/main.js` (beranda dan Bilangan Bulat),
+  dan `assets/js/rasional.js` (Bilangan Rasional) — tampilan dan logika.
 - Materi lain (Kelas 7 Semester 2, Kelas 8, Kelas 9) sengaja ditandai
   **Segera Hadir** sampai dibuat dengan template yang sama.
 

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>MPI Matematika SMP — Fase D | Kurikulum Merdeka</title>
-<meta name="description" content="Media Pembelajaran Interaktif Matematika SMP Fase D, Kurikulum Merdeka, pendekatan Pembelajaran Mendalam. Prototipe: Bilangan Bulat Kelas 7.">
+<meta name="description" content="Media Pembelajaran Interaktif Matematika SMP Fase D, Kurikulum Merdeka, pendekatan Pembelajaran Mendalam. Prototipe aktif: Bilangan Bulat dan Bilangan Rasional Kelas 7.">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
   <div class="wrap" style="padding:0">
     <p><strong>MPI MATEMATIKA SMP &middot; FASE D &middot; KURIKULUM MERDEKA</strong></p>
     <h1>Belajar Matematika yang Berkesadaran, Bermakna, dan Menggembirakan</h1>
-    <p>Untuk siswa dan guru. Mulai dari prototipe Kelas 7: Bilangan Bulat (B.1&ndash;B.2). Materi lain ditandai <em>Segera Hadir</em> sampai dibuat dengan template yang sama.</p>
+    <p>Untuk siswa dan guru. Prototipe aktif Kelas 7: Bilangan Bulat (B.1&ndash;B.2) dan Bilangan Rasional (B.3). Materi lain ditandai <em>Segera Hadir</em> sampai dibuat dengan template yang sama.</p>
   </div>
 </header>
 
@@ -44,9 +44,19 @@
     <p class="muted">Untuk dikirim ke guru: tekan <em>Ekspor Riwayat</em>, lalu kirim berkasnya ke guru. Guru tidak bisa melihat progresmu secara real time dari situs statis ini.</p>
   </section>
 
+  <section class="card">
+    <h2>Progres Bilangan Rasional</h2>
+    <p><strong>Skor terbaik:</strong> <span id="dashRasionalBest">—</span> &middot; <strong>Percobaan kuis:</strong> <span id="dashRasionalAttempts">0</span> &middot; <strong>Terakhir:</strong> <span id="dashRasionalLast">Belum ada kuis</span></p>
+    <div class="row no-print">
+      <a class="btn" href="bilangan-rasional.html">Lanjutkan: Bilangan Rasional</a>
+    </div>
+    <h3>Riwayat Kuis Bilangan Rasional</h3>
+    <table><thead><tr><th>Tanggal</th><th>Materi</th><th>Skor</th><th>%</th></tr></thead><tbody id="rasionalHistoryList"><tr><td colspan="4">Memuat…</td></tr></tbody></table>
+  </section>
+
   <section class="card guru-only">
     <h2>Dasbor Guru</h2>
-    <p>Mode guru menampilkan panduan ATP/TP, alokasi JP, miskonsepsi, diferensiasi, dan LKPD di halaman materi. Di halaman Bilangan Bulat, buka bagian <a href="bilangan-bulat.html#guru">Panduan Guru</a>.</p>
+    <p>Mode guru menampilkan panduan ATP/TP, alokasi JP, miskonsepsi, diferensiasi, dan LKPD di halaman materi. Di halaman Bilangan Bulat, buka bagian <a href="bilangan-bulat.html#guru">Panduan Guru</a>; di halaman Bilangan Rasional, buka <a href="bilangan-rasional.html#guru">Panduan Guru</a>.</p>
     <p><strong>Cara memakai di kelas:</strong> tampilkan simulasi garis bilangan dan GeoGebra di proyektor, minta siswa mencoba sendiri di HP, lalu tutup dengan kuis formatif dan refleksi. Minta siswa mengekspor riwayatnya sebagai bukti belajar.</p>
     <p><strong>Sumber:</strong> ATP MGMP Matematika SMP Kabupaten Lampung Tengah, Tahun Pelajaran 2026/2027, Fase D.</p>
   </section>
@@ -55,7 +65,7 @@
     <h2>Peta Belajar Fase D</h2>
     <h3>Kelas 7 — Semester 1</h3>
     <p><a class="btn small" href="bilangan-bulat.html">Bilangan Bulat</a> <span class="badge">B.1 &middot; B.2</span> <span class="badge">Prototipe aktif</span><br>
-    <span class="badge soon">Bilangan Rasional — B.3 — Segera Hadir</span>
+    <a class="btn small" href="bilangan-rasional.html">Bilangan Rasional</a> <span class="badge">B.3</span> <span class="badge">Prototipe aktif</span><br>
     <span class="badge soon">Aritmetika Sosial — B.2, B.3 — Segera Hadir</span>
     <span class="badge soon">Perbandingan — B.4 — Segera Hadir</span></p>
     <h3>Kelas 7 — Semester 2</h3>
