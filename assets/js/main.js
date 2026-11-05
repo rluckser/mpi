@@ -22,6 +22,9 @@ function fmtDate(iso) {
 function bilanganHistory() {
   return getHistory().filter(function (h) { return h.materi.indexOf('Bilangan Bulat') === 0; });
 }
+function rasionalHistory() {
+  return getHistory().filter(function (h) { return h.materi.indexOf('Bilangan Rasional') === 0; });
+}
 
 // ---------- Mode siswa / guru dan nama ----------
 function applyMode(mode) {
@@ -51,6 +54,17 @@ function renderDashboard() {
   }
   const qh = document.getElementById('quizHistory');
   if (qh) qh.innerHTML = list.length ? '<p>Skor terbaik: <strong>' + best + '%</strong> dari ' + list.length + ' percobaan. Terakhir: ' + fmtDate(last.tanggal) + '.</p>' : '<p>Belum ada riwayat kuis untuk materi ini.</p>';
+  const rlist = rasionalHistory();
+  const rbest = rlist.length ? Math.max.apply(null, rlist.map(function (h) { return h.persen; })) : 0;
+  set('dashRasionalBest', rlist.length ? rbest + '%' : '—');
+  set('dashRasionalAttempts', String(rlist.length));
+  set('dashRasionalLast', rlist.length ? fmtDate(rlist[0].tanggal) : 'Belum ada kuis');
+  const rhist = document.getElementById('rasionalHistoryList');
+  if (rhist) {
+    rhist.innerHTML = rlist.length ? rlist.slice(0, 10).map(function (h) {
+      return '<tr><td>' + fmtDate(h.tanggal) + '</td><td>' + h.materi + '</td><td>' + h.skor + '/' + h.total + '</td><td>' + h.persen + '%</td></tr>';
+    }).join('') : '<tr><td colspan="4">Belum ada riwayat. Kerjakan kuis di halaman Bilangan Rasional.</td></tr>';
+  }
   const nama = localStorage.getItem(NAME_KEY) || '';
   const halo = document.getElementById('haloText'); if (halo) halo.textContent = nama ? 'Halo, ' + nama + '!' : 'Halo!';
 }
