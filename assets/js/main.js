@@ -25,6 +25,9 @@ function bilanganHistory() {
 function rasionalHistory() {
   return getHistory().filter(function (h) { return h.materi.indexOf('Bilangan Rasional') === 0; });
 }
+function topicHistory(prefix) {
+  return getHistory().filter(function (h) { return h.materi.indexOf(prefix) === 0; });
+}
 
 // ---------- Mode siswa / guru dan nama ----------
 function applyMode(mode) {
@@ -65,6 +68,24 @@ function renderDashboard() {
       return '<tr><td>' + fmtDate(h.tanggal) + '</td><td>' + h.materi + '</td><td>' + h.skor + '/' + h.total + '</td><td>' + h.persen + '%</td></tr>';
     }).join('') : '<tr><td colspan="4">Belum ada riwayat. Kerjakan kuis di halaman Bilangan Rasional.</td></tr>';
   }
+  // Kelas 8 Semester 1 — satu pola yang sama untuk ketiga halaman baru.
+  [
+    { prefix: 'Bilangan Berpangkat dan Bentuk Akar', best: 'dashBerpangkatBest', att: 'dashBerpangkatAttempts', last: 'dashBerpangkatLast', table: 'berpangkatHistoryList', page: 'Bilangan Berpangkat dan Bentuk Akar' },
+    { prefix: 'Teorema Pythagoras', best: 'dashPythagorasBest', att: 'dashPythagorasAttempts', last: 'dashPythagorasLast', table: 'pythagorasHistoryList', page: 'Teorema Pythagoras' },
+    { prefix: 'PLSV dan PtLSV', best: 'dashPlsvBest', att: 'dashPlsvAttempts', last: 'dashPlsvLast', table: 'plsvHistoryList', page: 'PLSV dan PtLSV' }
+  ].forEach(function (t) {
+    const tl = topicHistory(t.prefix);
+    const tb = tl.length ? Math.max.apply(null, tl.map(function (h) { return h.persen; })) : 0;
+    set(t.best, tl.length ? tb + '%' : '—');
+    set(t.att, String(tl.length));
+    set(t.last, tl.length ? fmtDate(tl[0].tanggal) : 'Belum ada kuis');
+    const th = document.getElementById(t.table);
+    if (th) {
+      th.innerHTML = tl.length ? tl.slice(0, 10).map(function (h) {
+        return '<tr><td>' + fmtDate(h.tanggal) + '</td><td>' + h.materi + '</td><td>' + h.skor + '/' + h.total + '</td><td>' + h.persen + '%</td></tr>';
+      }).join('') : '<tr><td colspan="4">Belum ada riwayat. Kerjakan kuis di halaman ' + t.page + '.</td></tr>';
+    }
+  });
   const nama = localStorage.getItem(NAME_KEY) || '';
   const halo = document.getElementById('haloText'); if (halo) halo.textContent = nama ? 'Halo, ' + nama + '!' : 'Halo!';
 }
