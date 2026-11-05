@@ -20,6 +20,21 @@ pendekatan Pembelajaran Mendalam. Situs statis, siap untuk GitHub Pages.
     Bilangan Rasional = 16 JP dan Aritmetika Sosial = 12 JP.
 - `assets/css/style.css`, `assets/js/main.js` (beranda dan Bilangan Bulat),
   dan `assets/js/rasional.js` (Bilangan Rasional) — tampilan dan logika.
+- Kelas 8 Semester 1 (lokal, belum di-push):
+  - `bilangan-berpangkat-akar.html` + `assets/js/berpangkat.js` — **B.5, B.6, B.7**
+    (24 JP; tidak ada konflik JP: 10 + 8 + 6 = 24). GeoGebra terverifikasi:
+    Laws of exponents (gajdzwde), Scientific notation (m9d5vyvx);
+    Radical simplification (yzsffu5t) hanya ditautkan.
+  - `pythagoras.html` + `assets/js/pythagoras.js` — **G.4** (20 JP).
+    GeoGebra terverifikasi: Investigating Pythagorean Theorem (ybpfw2fq).
+  - `plsv-ptlsv.html` + `assets/js/plsv.js` — **A.2, A.3** (10 + 10 JP).
+    GeoGebra terverifikasi: Solve Simple Linear Equations in One Variable
+    (faquv9aQ, disematkan) dan Representing Linear Inequalities on a Number
+    Line (r3enbtkw, ditautkan).
+  - Setiap halaman Kelas 8 Semester 1: kuis formatif 10 soal dengan kunci
+    yang dihitung ulang 10/10 benar, 0 kesalahan; target ketuntasan
+    [PERLU DIISI GURU]. Sematan GeoGebra berbahasa Inggris; rendering
+    iframe di browser sungguhan dan tampilan di HP belum diuji.
 - Materi lain (Kelas 7 Semester 2, Kelas 8, Kelas 9) sengaja ditandai
   **Segera Hadir** sampai dibuat dengan template yang sama.
 

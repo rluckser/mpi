@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Persamaan dan Pertidaksamaan Linear Satu Variabel (A.2–A.3) — Kelas 8 Semester 1 | MPI Matematika</title>
+<meta name="description" content="Menentukan, memodelkan, dan menemukan persamaan linear satu variabel dan pertidaksamaan linear satu variabel serta menyelesaikan masalah kontekstual yang terkait.">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="wrap" style="padding:0">
+    <p><strong>KELAS 8 &middot; SEMESTER 1 &middot; ELEMEN ALJABAR</strong></p>
+    <h1>Persamaan dan Pertidaksamaan Linear Satu Variabel</h1>
+    <p><span class="badge">A.2</span> <span class="badge">A.3</span> PLSV dan PtLSV: memodelkan kalimat menjadi aljabar, lalu menyelesaikannya langkah demi langkah.</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <nav class="top no-print">
+    <a class="btn secondary" href="index.html">← Beranda &amp; Dasbor</a>
+    <button class="btn secondary" data-mode-btn="siswa">Mode Siswa</button>
+    <button class="btn secondary" data-mode-btn="guru">Mode Guru</button>
+    <a class="btn secondary" href="#guru">Panduan Guru</a>
+  </nav>
+
+  <section class="card">
+    <h2>1. Tujuan Pembelajaran</h2>
+    <p><strong>A.2 (10 JP):</strong> Menentukan, memodelkan dan menemukan persamaan linier satu variabel serta menyelesaikan permasalahan kontekstual yang terkait.</p>
+    <p><strong>A.3 (10 JP):</strong> Menentukan, memodelkan dan menemukan pertidaksamaan linier satu variabel serta menyelesaikan permasalahan kontekstual yang terkait.</p>
+    <p class="muted">Alokasi pada tabel ATP: A.2 = 10 JP dan A.3 = 10 JP; pada Tabel Distribusi Kelas 8 Semester 1 keduanya digabung dalam materi pokok “Persamaan dan Pertidaksamaan Linear Satu Variabel” = 20 JP. Halaman ini adalah prototipe lokal dan belum ditautkan dari beranda.</p>
+    <h3>Pemantik: kalimat sehari-hari yang ternyata persamaan</h3>
+    <div class="grid two">
+      <div><strong>💰 Uang saku</strong><p class="muted">Uang sakumu Rp10.000 per hari. Setelah 3 hari menabung tanpa jajan dan ditambah Rp5.000 dari kakak, uangmu Rp35.000. Berapa sebenarnya yang kamu tabung tiap hari? Itu 3x + 5 = 35.</p></div>
+      <div><strong>🚗 Tarif ojek</strong><p class="muted">Tarif awal Rp5.000 ditambah Rp2.000 per km. Kalau kamu membayar Rp15.000, berapa km jaraknya? Modelnya 2.000x + 5.000 = 15.000.</p></div>
+      <div><strong>🛗 Batas berat lift</strong><p class="muted">Lift hanya boleh mengangkut paling banyak 400 kg. Kalau rata-rata satu orang 50 kg, berapa orang yang boleh naik? Itu pertidaksamaan: 50x ≤ 400.</p></div>
+      <div><strong>🎢 Batas tinggi wahana</strong><p class="muted">“Tinggi badan minimal 120 cm” artinya tinggi x harus memenuhi x ≥ 120. Bukan satu jawaban, melainkan semua nilai yang memenuhi syarat itu.</p></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>2. Materi Ringkas</h2>
+    <h3>Memodelkan kalimat menjadi bentuk aljabar</h3>
+    <p>Misalkan bilangan yang dicari adalah x. Terjemahkan kata kunci: “ditambah” → +, “dikurangi” → −, “kali” → ×, “sama dengan” → =, “tidak lebih dari” → ≤, “paling sedikit” → ≥.</p>
+    <table><tr><th>Kalimat</th><th>Model</th></tr>
+    <tr><td>Dua kali suatu bilangan ditambah 5 sama dengan 15</td><td>2x + 5 = 15</td></tr>
+    <tr><td>Lima kurang dari tiga kali suatu bilangan adalah 10</td><td>3x − 5 = 10</td></tr>
+    <tr><td>Uang Dita tidak lebih dari Rp20.000</td><td>x ≤ 20.000</td></tr>
+    <tr><td>Umur Andi paling sedikit 13 tahun</td><td>x ≥ 13</td></tr></table>
+    <h3>PLSV: bentuk ax + b = c (a ≠ 0)</h3>
+    <p>Penyelesaiannya satu bilangan. Gunakan operasi invers di kedua ruas — seperti timbangan yang harus tetap seimbang: apa yang dilakukan di ruas kiri, lakukan juga di ruas kanan.</p>
+    <table><tr><th>Langkah</th><th>Contoh: 2x + 5 = 13</th></tr>
+    <tr><td>1. Hilangkan konstanta dengan operasi invers</td><td>2x = 13 − 5 = 8</td></tr>
+    <tr><td>2. Bagi kedua ruas dengan koefisien x</td><td>x = 8 ÷ 2 = 4</td></tr>
+    <tr><td>3. Cek dengan substitusi</td><td>2(4) + 5 = 13 ✓</td></tr></table>
+    <h3>PtLSV: tanda dan himpunan penyelesaian</h3>
+    <table><tr><th>Tanda</th><th>Artinya</th><th>Pada garis bilangan</th></tr>
+    <tr><td>&lt;</td><td>kurang dari</td><td>lingkaran kosong (○), batas tidak ikut</td></tr>
+    <tr><td>≤</td><td>kurang dari atau sama dengan</td><td>lingkaran penuh (●), batas ikut</td></tr>
+    <tr><td>&gt;</td><td>lebih dari</td><td>lingkaran kosong (○), batas tidak ikut</td></tr>
+    <tr><td>≥</td><td>lebih dari atau sama dengan</td><td>lingkaran penuh (●), batas ikut</td></tr></table>
+    <p><strong>Aturan terpenting:</strong> jika kedua ruas dikali atau dibagi dengan bilangan <strong>negatif</strong>, tanda pertidaksamaan <strong>berbalik</strong> (&lt; menjadi &gt;, ≤ menjadi ≥, dan sebaliknya). Jika dikali/dibagi bilangan positif, tanda tetap. Himpunan penyelesaian pertidaksamaan biasanya tak berhingga banyaknya — itulah sebabnya digambar sebagai arsiran pada garis bilangan, bukan satu titik.</p>
+  </section>
+
+  <section class="card">
+    <h2>3. Simulator 1: Penyelesai PLSV Langkah demi Langkah</h2>
+    <p>Isi a, b, dan c dari persamaan ax + b = c, lalu lihat langkah dan cek substitusinya.</p>
+    <div class="row no-print">
+      <label>a (koefisien x) <input type="number" id="eqA" value="2" min="-20" max="20"></label>
+      <label>b <input type="number" id="eqB" value="5" min="-50" max="50"></label>
+      <label>c <input type="number" id="eqC" value="13" min="-100" max="100"></label>
+      <button class="btn" id="solveBtn">Selesaikan</button>
+    </div>
+    <div id="solveResult" class="feedback good">Contoh: 2x + 5 = 13 → 2x = 8 → x = 4. Cek: 2(4) + 5 = 13 ✓</div>
+
+    <h3>Simulator 2: Penyelesai PtLSV dan Garis Bilangan</h3>
+    <p>Isi a, b, tanda, dan c dari ax + b (tanda) c. Perhatikan kapan tandanya berbalik, lalu uji bilangan lain pada garis bilangan.</p>
+    <div class="row no-print">
+      <label>a <input type="number" id="ineqA" value="-2" min="-20" max="20"></label>
+      <label>b <input type="number" id="ineqB" value="6" min="-50" max="50"></label>
+      <label>Tanda <select id="ineqSign"><option value="<">&lt;</option><option value="<=">≤</option><option value=">">&gt;</option><option value=">=" selected>≥</option></select></label>
+      <label>c <input type="number" id="ineqC" value="2" min="-100" max="100"></label>
+      <button class="btn" id="ineqBtn">Selesaikan</button>
+    </div>
+    <div id="ineqResult" class="feedback good">Contoh: −2x + 6 ≥ 2 → −2x ≥ −4 → bagi dengan −2 (negatif), tanda berbalik → x ≤ 2.</div>
+    <div class="numline" id="ineqLine" aria-label="Garis bilangan himpunan penyelesaian"></div>
+    <div class="row no-print">
+      <label>Uji bilangan x = <input type="number" id="testX" value="0" min="-50" max="50"></label>
+      <button class="btn secondary" id="testBtn">Apakah Memenuhi?</button>
+    </div>
+    <div id="testResult"></div>
+  </section>
+
+  <section class="card">
+    <h2>4. GeoGebra: Menyelesaikan Persamaan dengan Konsep Timbangan</h2>
+    <p>Pada GeoGebra di bawah ini, buat persamaan baru lalu selesaikan dengan konsep timbangan: apa pun yang kamu lakukan di satu ruas, lakukan juga di ruas lain supaya timbangan tetap seimbang. Coba persamaan 2x + 5 = 13, lalu bandingkan dengan langkah di simulator di atas.</p>
+    <iframe class="geogebra" title="GeoGebra Solve Simple Linear Equations" src="https://www.geogebra.org/material/iframe/id/faquv9aQ" allowfullscreen></iframe>
+    <p class="muted">Sumber GeoGebra: <a href="https://mat.geogebra.org/material/show/id/faquv9aQ">Solve Simple Linear Equations in One Variable (Balance Concept)</a>, untuk usia 11–14 tahun, berbahasa Inggris. Kalau sematan tidak termuat karena jaringan, buka tautan itu langsung. Simulator di atas tetap bisa dipakai tanpa GeoGebra.</p>
+    <h3>GeoGebra kedua (tautan): Pertidaksamaan pada Garis Bilangan</h3>
+    <p>Untuk PtLSV, ada juga <a href="https://mat.geogebra.org/material/show/id/r3enbtkw">Representing Linear Inequalities in one-variable on a Number Line</a> (usia 10–15 tahun, berbahasa Inggris) untuk berlatih menggambar himpunan penyelesaian. Sematan ini sengaja tidak ditampilkan di halaman supaya halaman tetap ringan; simulator garis bilangan di atas sudah menampilkan arsiran dan lingkaran kosong/penuh.</p>
+    <p class="muted">Catatan jujur: kedua materi GeoGebra di atas sudah diverifikasi ada lewat halaman materinya, tetapi tampilan sematannya belum dicek langsung di HP.</p>
+  </section>
+
+  <section class="card">
+    <h2>5. Contoh Kontekstual</h2>
+    <p><strong>Uang saku (PLSV):</strong> Rani menabung Rp10.000 setiap hari selama x hari, lalu mendapat tambahan Rp5.000. Totalnya Rp35.000. Model: 10.000x + 5.000 = 35.000 → 10.000x = 30.000 → x = 3 hari.</p>
+    <p><strong>Tarif (PLSV):</strong> Tarif ojek daring Rp5.000 ditambah Rp2.000 per km. Bayar Rp15.000 untuk jarak x km: 2.000x + 5.000 = 15.000 → 2.000x = 10.000 → x = 5 km.</p>
+    <p><strong>Batas (PtLSV):</strong> Sebuah kotak hanya boleh berisi paling banyak 12 kg. Tiap buku 2 kg dan kotak kosongnya 2 kg: 2x + 2 ≤ 12 → 2x ≤ 10 → x ≤ 5 buku.</p>
+    <p><strong>Tanda berbalik (PtLSV):</strong> −3x + 9 &gt; 0 → −3x &gt; −9 → bagi dengan −3, tanda berbalik → x &lt; 3. Tanpa membalik tanda, jawabannya akan terbalik.</p>
+  </section>
+
+  <section class="card no-print">
+    <h2>6. Latihan Bebas (tidak masuk riwayat)</h2>
+    <p>Soal acak: kadang PLSV (cari x), kadang PtLSV (cari batas x). Tulis jawabanmu sebagai bilangan, boleh memakai koma desimal.</p>
+    <p id="practiceQ">Memuat soal…</p>
+    <p id="practiceWhy" style="display:none"></p>
+    <div class="row">
+      <label>Jawabanmu <input type="text" id="practiceAns" placeholder="Contoh: 4 atau -2,5"></label>
+      <button class="btn" id="checkPracticeBtn">Cek Jawaban</button>
+      <button class="btn secondary" id="newPracticeBtn">Soal Baru</button>
+    </div>
+    <div id="practiceFeedback"></div>
+  </section>
+
+  <section class="card">
+    <h2>7. Kuis Formatif A.2–A.3</h2>
+    <p>Jawab semua soal. Umpan balik muncul langsung setelah kamu memilih. Skor akhir tersimpan otomatis di perangkat ini.</p>
+    <p><strong id="quizProgress">Terjawab: 0/10</strong></p>
+    <div id="quizBox"></div>
+    <div class="row no-print">
+      <button class="btn" id="finishQuiz" disabled>Selesai &amp; Simpan Skor</button>
+      <button class="btn secondary exportBtn">Ekspor Riwayat</button>
+    </div>
+    <div id="quizResult"></div>
+    <div id="quizHistory"></div>
+  </section>
+
+  <section class="card">
+    <h2>8. Refleksi</h2>
+    <p>Tulis dengan bahasamu sendiri. Refleksi ini tersimpan di perangkatmu.</p>
+    <label for="refleksiPlsv">Kapan kamu harus membalik tanda pertidaksamaan, dan mengapa? Beri satu contoh persamaan dan satu contoh pertidaksamaan dari kehidupanmu.</label>
+    <textarea id="refleksiPlsv" placeholder="Contoh: Tanda dibalik saat … Contoh dari hidup saya …"></textarea>
+    <p class="muted">Pembelajaran Mendalam: berkesadaran (kamu tahu langkah mana yang masih ragu), bermakna (contoh dari uang saku, tarif, dan batas), menggembirakan (kamu mencoba, bukan hanya membaca).</p>
+  </section>
+
+  <section class="card guru-only" id="guru">
+    <h2>Panduan Guru — PLSV dan PtLSV</h2>
+    <div class="guru-note">
+      <p><strong>Tujuan Pembelajaran A.2 (10 JP):</strong> Menentukan, memodelkan dan menemukan persamaan linier satu variabel serta menyelesaikan permasalahan kontekstual yang terkait.</p>
+      <p><strong>Tujuan Pembelajaran A.3 (10 JP):</strong> Menentukan, memodelkan dan menemukan pertidaksamaan linier satu variabel serta menyelesaikan permasalahan kontekstual yang terkait.</p>
+      <p><strong>Alokasi:</strong> ATP menulis A.2 = 10 JP dan A.3 = 10 JP; Tabel Distribusi Kelas 8 Semester 1 menggabungkan keduanya dalam materi pokok “Persamaan dan Pertidaksamaan Linear Satu Variabel” = 20 JP.</p>
+      <p><strong>Miskonsepsi umum:</strong> (1) melakukan operasi hanya di satu ruas; (2) lupa membalik tanda saat mengalikan/membagi dengan bilangan negatif; (3) mengira pertidaksamaan hanya punya satu jawaban; (4) salah memodelkan, misalnya “tiga kali suatu bilangan ditambah 5” ditulis 3(x + 5); (5) tertukar antara lingkaran kosong dan lingkaran penuh pada garis bilangan; (6) pindah ruas tanpa mengubah operasi menjadi inversnya.</p>
+      <p><strong>Diferensiasi:</strong> dasar — bentuk x + b = c dan ax = c, lalu pertidaksamaan dengan koefisien positif; menengah — ax + b = c, tanda kurung sederhana, dan pertidaksamaan satu langkah; lanjut — koefisien negatif dan tanda berbalik, soal kontekstual multi-langkah, dan membuat soal sendiri dari struk atau tarif nyata.</p>
+      <p><strong>Asesmen:</strong> observasi saat eksplorasi GeoGebra dan simulator, latihan bebas, kuis formatif 10 soal, dan refleksi siswa. Target ketuntasan: [PERLU DIISI GURU].</p>
+    </div>
+    <div class="row no-print"><button class="btn secondary printBtn">Cetak LKPD / Halaman Ini</button></div>
+    <p class="muted">LKPD cetak: cetak halaman ini, lalu minta siswa mengerjakan bagian GeoGebra dan refleksi di buku atau lembar terpisah bila perangkat terbatas.</p>
+  </section>
+  <p class="card siswa-only-note muted">Bagian Panduan Guru hanya tampil dalam Mode Guru. Aktifkan Mode Guru di atas untuk melihatnya.</p>
+</main>
+
+<footer>
+  <p><a href="index.html">← Kembali ke Beranda MPI</a> &middot; Sumber ATP: MGMP Matematika SMP Kab. Lampung Tengah 2026/2027.</p>
+</footer>
+<script src="assets/js/plsv.js"></script>
+</body>
+</html>

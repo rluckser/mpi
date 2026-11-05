@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teorema Pythagoras (G.4) — Kelas 8 Semester 1 | MPI Matematika</title>
+<meta name="description" content="Menganalisis dan menentukan teorema Pythagoras, tripel Pythagoras, panjang sisi segitiga, dan perbandingan sisi segitiga siku-siku istimewa, serta jarak antara dua titik.">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="wrap" style="padding:0">
+    <p><strong>KELAS 8 &middot; SEMESTER 1 &middot; ELEMEN GEOMETRI</strong></p>
+    <h1>Teorema Pythagoras</h1>
+    <p><span class="badge">G.4</span> a² + b² = c² — tripel Pythagoras, segitiga siku-siku istimewa, dan jarak dua titik.</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <nav class="top no-print">
+    <a class="btn secondary" href="index.html">← Beranda &amp; Dasbor</a>
+    <button class="btn secondary" data-mode-btn="siswa">Mode Siswa</button>
+    <button class="btn secondary" data-mode-btn="guru">Mode Guru</button>
+    <a class="btn secondary" href="#guru">Panduan Guru</a>
+  </nav>
+
+  <section class="card">
+    <h2>1. Tujuan Pembelajaran</h2>
+    <p><strong>G.4:</strong> Menganalisis dan menentukan teorema Pythagoras, tripel Pythagoras, panjang sisi segitiga, dan perbandingan sisi segitiga siku-siku istimewa, serta menyelesaikan permasalahan yang terkait (termasuk menghitung jarak antara dua titik pada bidang koordinat Kartesius).</p>
+    <p class="muted">Alokasi pada tabel ATP: G.4 = 20 JP.</p>
+    <h3>Pemantik: di mana segitiga siku-siku muncul?</h3>
+    <div class="grid two">
+      <div><strong>🪜 Tangga bersandar</strong><p class="muted">Tangga 5 m dengan kaki 3 m dari dinding mencapai tinggi 4 m. Tanpa mengukur ke atas pun, tingginya bisa dihitung.</p></div>
+      <div><strong>📺 Diagonal layar dan lapangan</strong><p class="muted">Layar 30 cm × 40 cm punya diagonal 50 cm. Lapangan 30 m × 40 m punya diagonal 50 m.</p></div>
+      <div><strong>📍 Jarak dua titik</strong><p class="muted">Jarak titik (2, 2) ke (5, 6) adalah 5 satuan — itulah sisi miring segitiga dengan kaki 3 dan 4.</p></div>
+      <div><strong>🏗️ Sudut siku-siku</strong><p class="muted">Tukang memakai segitiga 3-4-5 untuk mengecek apakah sudut dinding benar-benar siku-siku.</p></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>2. Materi Ringkas</h2>
+    <p><strong>Teorema Pythagoras:</strong> pada segitiga siku-siku dengan kaki a dan b serta sisi miring (hipotenusa) c, berlaku <strong>a² + b² = c²</strong>. Sisi miring selalu sisi terpanjang dan selalu berhadapan dengan sudut siku-siku. Kebalikannya juga benar: jika a² + b² = c², segitiga itu siku-siku.</p>
+    <h3>Tripel Pythagoras</h3>
+    <p>Tiga bilangan bulat yang memenuhi a² + b² = c² disebut tripel Pythagoras. Kelipatannya juga tripel.</p>
+    <table><tr><th>Tripel</th><th>Periksa</th></tr>
+    <tr><td>3, 4, 5</td><td>9 + 16 = 25</td></tr>
+    <tr><td>5, 12, 13</td><td>25 + 144 = 169</td></tr>
+    <tr><td>8, 15, 17</td><td>64 + 225 = 289</td></tr>
+    <tr><td>7, 24, 25</td><td>49 + 576 = 625</td></tr>
+    <tr><td>20, 21, 29</td><td>400 + 441 = 841</td></tr></table>
+    <h3>Segitiga siku-siku istimewa</h3>
+    <table><tr><th>Segitiga</th><th>Perbandingan sisi</th><th>Contoh</th></tr>
+    <tr><td>45°–45°–90°</td><td>kaki : kaki : miring = 1 : 1 : √2</td><td>Kaki 7 → miring 7√2 ≈ 9,90</td></tr>
+    <tr><td>30°–60°–90°</td><td>pendek : panjang : miring = 1 : √3 : 2</td><td>Pendek 6 → panjang 6√3 ≈ 10,39; miring 12</td></tr></table>
+    <p>Ingat: sisi terpendek berhadapan dengan sudut 30°, sisi terpanjang (miring) berhadapan dengan sudut 90°.</p>
+    <h3>Jarak dua titik</h3>
+    <p>Jarak titik (x₁, y₁) ke (x₂, y₂) adalah sisi miring segitiga dengan kaki |x₂ − x₁| dan |y₂ − y₁|: <strong>d = √((x₂ − x₁)² + (y₂ − y₁)²)</strong>.</p>
+  </section>
+
+  <section class="card">
+    <h2>3. Simulasi: Kalkulator Sisi Segitiga Siku-Siku</h2>
+    <p>Pilih sisi yang dicari, isi dua sisi yang diketahui, lalu tekan tombol. Gambar segitiga dan kuadrat sisinya ikut berubah.</p>
+    <div class="row no-print">
+      <label>Cari <select id="sideMode"><option value="c">Hipotenusa (c)</option><option value="a">Kaki a</option><option value="b">Kaki b</option></select></label>
+      <label>Sisi pertama <input type="number" id="sideX" value="3" min="0.1" step="0.1"></label>
+      <label>Sisi kedua <input type="number" id="sideY" value="4" min="0.1" step="0.1"></label>
+      <button class="btn" id="calcSideBtn">Hitung Sisi</button>
+    </div>
+    <svg id="triSvg" viewBox="0 0 260 180" width="100%" height="180" role="img" aria-label="Segitiga siku-siku dengan sisi a, b, dan c">
+      <polygon id="triPoly" points="20,150 220,150 20,30" fill="#ccfbf1" stroke="#0f766e" stroke-width="2"></polygon>
+      <text id="triLabelA" x="120" y="170" text-anchor="middle">a = 3</text>
+      <text id="triLabelB" x="10" y="90" text-anchor="middle">b = 4</text>
+      <text id="triLabelC" x="140" y="80" text-anchor="middle">c = 5</text>
+    </svg>
+    <div id="sideResult" class="feedback good"><strong>c = √(3² + 4²) = √25 = 5.</strong> Periksa: 3² + 4² = 9 + 16 = 25 = 5².</div>
+
+    <h3>Simulasi: Kalkulator Jarak Dua Titik</h3>
+    <p>Isi koordinat dua titik. Jaraknya adalah sisi miring segitiga dengan kaki Δx dan Δy.</p>
+    <div class="row no-print">
+      <label>x₁ <input type="number" id="distX1" value="2" step="1"></label>
+      <label>y₁ <input type="number" id="distY1" value="2" step="1"></label>
+      <label>x₂ <input type="number" id="distX2" value="5" step="1"></label>
+      <label>y₂ <input type="number" id="distY2" value="6" step="1"></label>
+      <button class="btn" id="calcDistBtn">Hitung Jarak</button>
+    </div>
+    <svg id="distSvg" viewBox="0 0 260 200" width="100%" height="200" role="img" aria-label="Dua titik pada bidang koordinat dan segitiga jaraknya">
+      <line id="distLegX" x1="50" y1="150" x2="110" y2="150" stroke="#94a3b8" stroke-width="2" stroke-dasharray="5,4"></line>
+      <line id="distLegY" x1="110" y1="150" x2="110" y2="70" stroke="#94a3b8" stroke-width="2" stroke-dasharray="5,4"></line>
+      <line id="distHyp" x1="50" y1="150" x2="110" y2="70" stroke="#0f766e" stroke-width="3"></line>
+      <circle id="distP1" cx="50" cy="150" r="5" fill="#0f766e"></circle>
+      <circle id="distP2" cx="110" cy="70" r="5" fill="#f59e0b"></circle>
+      <text id="distLabelP1" x="50" y="170" text-anchor="middle">(2, 2)</text>
+      <text id="distLabelP2" x="110" y="55" text-anchor="middle">(5, 6)</text>
+      <text id="distLabelD" x="95" y="105" text-anchor="middle">d = 5</text>
+    </svg>
+    <div id="distResult" class="feedback good"><strong>d = √((5 − 2)² + (6 − 2)²) = √(9 + 16) = √25 = 5.</strong></div>
+  </section>
+
+  <section class="card">
+    <h2>4. GeoGebra: Menyelidiki Teorema Pythagoras</h2>
+    <p>Pada GeoGebra di bawah ini, geser titik-titik jingga untuk membuat segitiga baru dan cari tripel Pythagoras sebanyak mungkin. Lalu geser titik biru dan penggeser Transform untuk melihat bahwa luas dua persegi kecil sama dengan luas persegi besar.</p>
+    <iframe class="geogebra" title="GeoGebra Investigating Pythagorean Theorem" src="https://www.geogebra.org/material/iframe/id/ybpfw2fq" allowfullscreen></iframe>
+    <p class="muted">Sumber GeoGebra: <a href="https://www.geogebra.org/m/ybpfw2fq">Investigating Pythagorean Theorem</a>. Kalau sematan tidak termuat karena jaringan, buka tautan itu langsung. Kedua kalkulator di atas tetap bisa dipakai tanpa GeoGebra.</p>
+    <p><strong>Tugas eksplorasi:</strong> (a) Temukan tripel selain 3-4-5 dengan menggeser titik jingga. (b) Jelaskan dengan bahasamu sendiri mengapa a² + b² = c² dari luas persegi-persegi pada sisi segitiga.</p>
+  </section>
+
+  <section class="card">
+    <h2>5. Contoh Kontekstual</h2>
+    <p><strong>Tangga:</strong> Tangga 5 m, kaki 3 m dari dinding. Tinggi ujung tangga = √(5² − 3²) = √(25 − 9) = √16 = 4 m.</p>
+    <p><strong>Diagonal lapangan:</strong> Lapangan 30 m × 40 m. Diagonal = √(30² + 40²) = √(900 + 1600) = √2500 = 50 m.</p>
+    <p><strong>Jarak dua titik:</strong> Titik (2, 2) ke (5, 6): Δx = 3, Δy = 4, jadi jarak = √(3² + 4²) = 5 satuan.</p>
+  </section>
+
+  <section class="card no-print">
+    <h2>6. Latihan Bebas (tidak masuk riwayat)</h2>
+    <p>Jawaban berupa bilangan. Boleh memakai koma desimal, misalnya 9,90. Untuk jawaban akar, tulis nilai desimalnya dibulatkan dua angka di belakang koma.</p>
+    <p id="practiceQ">Memuat soal…</p>
+    <p id="practiceWhy" style="display:none"></p>
+    <div class="row">
+      <label>Jawabanmu <input type="text" id="practiceAns" placeholder="Contoh: 5 atau 9,90"></label>
+      <button class="btn" id="checkPracticeBtn">Cek Jawaban</button>
+      <button class="btn secondary" id="newPracticeBtn">Soal Baru</button>
+    </div>
+    <div id="practiceFeedback"></div>
+  </section>
+
+  <section class="card">
+    <h2>7. Kuis Formatif G.4</h2>
+    <p>Jawab semua soal. Umpan balik muncul langsung setelah kamu memilih. Skor akhir tersimpan otomatis di perangkat ini.</p>
+    <p><strong id="quizProgress">Terjawab: 0/10</strong></p>
+    <div id="quizBox"></div>
+    <div class="row no-print">
+      <button class="btn" id="finishQuiz" disabled>Selesai &amp; Simpan Skor</button>
+      <button class="btn secondary exportBtn">Ekspor Riwayat</button>
+    </div>
+    <div id="quizResult"></div>
+    <div id="quizHistory"></div>
+  </section>
+
+  <section class="card">
+    <h2>8. Refleksi</h2>
+    <p>Tulis dengan bahasamu sendiri. Refleksi ini tersimpan di perangkatmu.</p>
+    <label for="refleksiPythagoras">Kapan kamu memakai a² + b² = c² dan kapan memakai pengurangannya (c² − a²)? Beri satu contoh dari kehidupanmu di mana jarak miring lebih pendek daripada jalan memutar lewat dua sisi siku-siku.</label>
+    <textarea id="refleksiPythagoras" placeholder="Contoh: Saya memakai … Contoh dari hidup saya …"></textarea>
+    <p class="muted">Pembelajaran Mendalam: berkesadaran (kamu tahu kapan memakai rumus dan kapan memakai kebalikannya), bermakna (contoh dari hidupmu), menggembirakan (kamu mencoba, bukan hanya membaca).</p>
+  </section>
+
+  <section class="card guru-only" id="guru">
+    <h2>Panduan Guru — Teorema Pythagoras</h2>
+    <div class="guru-note">
+      <p><strong>Tujuan Pembelajaran G.4:</strong> Menganalisis dan menentukan teorema Pythagoras, tripel Pythagoras, panjang sisi segitiga, dan perbandingan sisi segitiga siku-siku istimewa, serta menyelesaikan permasalahan yang terkait (termasuk menghitung jarak antara dua titik pada bidang koordinat Kartesius).</p>
+      <p><strong>Alokasi ATP:</strong> G.4 = 20 JP.</p>
+      <p><strong>Miskonsepsi umum:</strong> (1) memakai a² + b² = c² pada segitiga yang bukan siku-siku, atau memakai sisi yang bukan hipotenusa sebagai c; (2) mengira c = a + b; (3) lupa mengakarkan hasil setelah menjumlahkan kuadrat; (4) mengira satu-satunya tripel adalah 3-4-5; (5) menghitung jarak dua titik sebagai Δx + Δy, bukan akar dari jumlah kuadratnya; (6) tertukar sisi pada segitiga 30°–60°–90° (sisi di hadapan 30° adalah yang terpendek).</p>
+      <p><strong>Diferensiasi:</strong> dasar — tripel Pythagoras dan sisi miring dari dua kaki; menengah — mencari kaki yang belum diketahui dan jarak dua titik; lanjut — segitiga istimewa, soal kontekstual multi-langkah, dan membuktikan segitiga siku-siku dengan kebalikan teorema.</p>
+      <p><strong>Asesmen:</strong> observasi saat eksplorasi GeoGebra, latihan bebas, kuis formatif 10 soal, dan refleksi siswa.</p>
+      <p><strong>Target ketuntasan:</strong> [PERLU DIISI GURU].</p>
+    </div>
+    <div class="row no-print"><button class="btn secondary printBtn">Cetak LKPD / Halaman Ini</button></div>
+    <p class="muted">LKPD cetak: cetak halaman ini, lalu minta siswa mengerjakan bagian GeoGebra dan refleksi di buku atau lembar terpisah bila perangkat terbatas.</p>
+  </section>
+  <p class="card siswa-only-note muted">Bagian Panduan Guru hanya tampil dalam Mode Guru. Aktifkan Mode Guru di atas untuk melihatnya.</p>
+</main>
+
+<footer>
+  <p><a href="index.html">← Kembali ke Beranda MPI</a> &middot; Sumber ATP: MGMP Matematika SMP Kab. Lampung Tengah 2026/2027.</p>
+</footer>
+<script src="assets/js/pythagoras.js"></script>
+</body>
+</html>

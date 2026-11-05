@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bilangan Berpangkat dan Bentuk Akar (B.5–B.7) — Kelas 8 Semester 1 | MPI Matematika</title>
+<meta name="description" content="Bilangan berpangkat bulat, bentuk akar dan merasionalkan penyebut, serta bentuk baku/notasi ilmiah. Simulasi, GeoGebra, latihan, kuis, dan refleksi.">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="hero">
+  <div class="wrap" style="padding:0">
+    <p><strong>KELAS 8 &middot; SEMESTER 1 &middot; ELEMEN BILANGAN</strong></p>
+    <h1>Bilangan Berpangkat dan Bentuk Akar</h1>
+    <p><span class="badge">B.5</span> <span class="badge">B.6</span> <span class="badge">B.7</span> Pangkat bulat, bentuk akar, merasionalkan penyebut, dan bentuk baku.</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <nav class="top no-print">
+    <a class="btn secondary" href="index.html">← Beranda &amp; Dasbor</a>
+    <button class="btn secondary" data-mode-btn="siswa">Mode Siswa</button>
+    <button class="btn secondary" data-mode-btn="guru">Mode Guru</button>
+    <a class="btn secondary" href="#guru">Panduan Guru</a>
+  </nav>
+
+  <section class="card">
+    <h2>1. Tujuan Pembelajaran</h2>
+    <p><strong>B.5 (10 JP):</strong> Membaca, menulis, mengidentifikasi, menjelaskan, dan membandingkan bilangan berpangkat bulat serta menggunakannya dalam konteks kehidupan sehari-hari dan pemecahan masalah sederhana.</p>
+    <p><strong>B.6 (8 JP):</strong> Mengidentifikasi, mengubah, menentukan hasil operasi hitung (penjumlahan, pengurangan, perkalian, dan pembagian) dan merasionalkan bentuk akar serta menyelesaikan permasalahan kontekstual yang terkait.</p>
+    <p><strong>B.7 (6 JP):</strong> Mengidentifikasi dan mengubah bentuk baku serta menyelesaikan permasalahan kontekstual yang terkait.</p>
+    <p class="muted"><strong>Catatan alokasi JP — dibaca apa adanya dari ATP:</strong> B.5 = 10 JP, B.6 = 8 JP, B.7 = 6 JP, dan Tabel Distribusi Materi Kelas 8 Semester 1 mengelompokkan ketiganya sebagai “Bilangan Berpangkat dan Bentuk Akar” = 24 JP. Jumlahnya cocok (10 + 8 + 6 = 24), jadi tidak ada konflik JP di halaman ini.</p>
+    <h3>Pemantik: pangkat ada di mana-mana</h3>
+    <div class="grid two">
+      <div><strong>🦠 Bakteri membelah</strong><p class="muted">1 bakteri membelah jadi 2, lalu 4, 8, 16… Setelah 5 kali membelah ada 2<sup>5</sup> = 32 bakteri.</p></div>
+      <div><strong>💾 Ukuran data</strong><p class="muted">1 kilobyte = 2<sup>10</sup> = 1.024 byte. Pangkat menjelaskan mengapa angka komputer melompat 2, 4, 8, 16, 32…</p></div>
+      <div><strong>📐 Sisi persegi</strong><p class="muted">Luas persegi 50 cm² berarti sisinya √50 cm = 5√2 cm, sekitar 7,07 cm — bukan bilangan bulat.</p></div>
+      <div><strong>🌍 Jarak yang sangat besar dan sangat kecil</strong><p class="muted">Jarak Bumi–Matahari ≈ 1,5 × 10<sup>8</sup> km, sedangkan ukuran virus ≈ 1,2 × 10<sup>−7</sup> m. Bentuk baku membuat keduanya mudah ditulis dan dibandingkan.</p></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>2. Materi Ringkas</h2>
+    <h3>Sifat-sifat bilangan berpangkat (a ≠ 0)</h3>
+    <table><tr><th>Sifat</th><th>Rumus</th><th>Contoh</th></tr>
+    <tr><td>Perkalian basis sama</td><td>a<sup>m</sup> × a<sup>n</sup> = a<sup>m+n</sup></td><td>2<sup>3</sup> × 2<sup>2</sup> = 2<sup>5</sup> = 32</td></tr>
+    <tr><td>Pembagian basis sama</td><td>a<sup>m</sup> ÷ a<sup>n</sup> = a<sup>m−n</sup></td><td>5<sup>4</sup> ÷ 5<sup>2</sup> = 5<sup>2</sup> = 25</td></tr>
+    <tr><td>Pangkat dari pangkat</td><td>(a<sup>m</sup>)<sup>n</sup> = a<sup>m×n</sup></td><td>(2<sup>3</sup>)<sup>2</sup> = 2<sup>6</sup> = 64</td></tr>
+    <tr><td>Pangkat nol</td><td>a<sup>0</sup> = 1</td><td>7<sup>0</sup> = 1</td></tr>
+    <tr><td>Pangkat negatif</td><td>a<sup>−n</sup> = 1/a<sup>n</sup></td><td>2<sup>−3</sup> = 1/8</td></tr>
+    <tr><td>Pangkat dari perkalian</td><td>(a × b)<sup>n</sup> = a<sup>n</sup> × b<sup>n</sup></td><td>(2 × 3)<sup>2</sup> = 2<sup>2</sup> × 3<sup>2</sup> = 36</td></tr></table>
+    <p><strong>Membandingkan pangkat:</strong> bandingkan dulu basis dan pangkatnya, atau hitung nilainya. Contoh: 2<sup>5</sup> = 32 lebih besar dari 3<sup>3</sup> = 27, meski basis 3 lebih besar dari 2.</p>
+    <h3>Bentuk akar</h3>
+    <p>√a adalah bilangan tak negatif yang kuadratnya a. Akar dari bilangan kuadrat sempurna adalah bulat (√144 = 12), sedangkan √50 bukan bulat — ia disederhanakan menjadi 5√2 karena 50 = 25 × 2.</p>
+    <table><tr><th>Operasi</th><th>Aturan</th><th>Contoh</th></tr>
+    <tr><td>Menyederhanakan</td><td>Cari faktor kuadrat sempurna terbesar di dalam akar.</td><td>√72 = √(36 × 2) = 6√2</td></tr>
+    <tr><td>Tambah / kurang</td><td>Hanya bentuk akar sejenis yang bisa dijumlahkan.</td><td>2√3 + 5√3 = 7√3; √2 + √3 tidak bisa digabung</td></tr>
+    <tr><td>Kali</td><td>√a × √b = √(a × b)</td><td>√2 × √3 = √6</td></tr>
+    <tr><td>Bagi</td><td>√a ÷ √b = √(a ÷ b)</td><td>√18 ÷ √2 = √9 = 3</td></tr>
+    <tr><td>Merasionalkan penyebut</td><td>Kalikan pembilang dan penyebut dengan bentuk akar penyebutnya.</td><td>1/√2 = √2/2; 3/√5 = 3√5/5</td></tr></table>
+    <h3>Bentuk baku (notasi ilmiah)</h3>
+    <p>Setiap bilangan ditulis a × 10<sup>n</sup> dengan 1 ≤ a &lt; 10 dan n bilangan bulat. Contoh: 450.000 = 4,5 × 10<sup>5</sup>; 0,0072 = 7,2 × 10<sup>−3</sup>. Pangkat positif untuk bilangan besar, pangkat negatif untuk bilangan kecil. Yang sering salah: menulis 72 × 10<sup>−4</sup> — koefisiennya harus di antara 1 dan 10, jadi bentuk bakunya 7,2 × 10<sup>−3</sup>.</p>
+  </section>
+
+  <section class="card">
+    <h2>3. Simulasi: Kalkulator Pangkat dan Sifat Pangkat</h2>
+    <p>Isi basis dan dua pangkat, lalu lihat nilai dan sifat pangkatnya sekaligus.</p>
+    <div class="row no-print">
+      <label>Basis <input type="number" id="powBase" value="2" min="-9" max="9"></label>
+      <label>Pangkat m <input type="number" id="powM" value="3" min="-5" max="5"></label>
+      <label>Pangkat n <input type="number" id="powN" value="2" min="-5" max="5"></label>
+      <button class="btn" id="powBtn">Hitung Pangkat</button>
+    </div>
+    <div id="powResult" class="feedback good">2<sup>3</sup> = 8; 2<sup>2</sup> = 4; 2<sup>3</sup> × 2<sup>2</sup> = 2<sup>5</sup> = 32.</div>
+
+    <h3>Simulasi: Penyederhana Bentuk Akar</h3>
+    <p>Isi bilangan di dalam akar, lalu lihat faktor kuadrat sempurnanya dan bentuk sederhananya.</p>
+    <div class="row no-print">
+      <label>Bilangan di dalam akar <input type="number" id="rootNum" value="72" min="1" max="10000"></label>
+      <button class="btn" id="rootBtn">Sederhanakan Akar</button>
+    </div>
+    <div id="rootResult" class="feedback good">√72 = √(36 × 2) = 6√2 ≈ 8,485.</div>
+
+    <h3>Simulasi: Konverter Bentuk Baku</h3>
+    <p>Isi sebuah bilangan biasa, lalu lihat bentuk bakunya. Atau isi koefisien dan pangkat 10, lalu lihat bilangan biasanya.</p>
+    <div class="row no-print">
+      <label>Bilangan biasa <input type="text" id="sciNum" value="0,0072"></label>
+      <button class="btn" id="sciBtn">Ubah ke Bentuk Baku</button>
+    </div>
+    <div id="sciResult" class="feedback good">0,0072 = 7,2 × 10<sup>−3</sup>. Koma digeser 3 tempat ke kanan, jadi pangkatnya −3.</div>
+    <div class="row no-print">
+      <label>Koefisien <input type="text" id="sciCoef" value="4,5"></label>
+      <label>Pangkat 10 <input type="number" id="sciExp" value="5" min="-12" max="12"></label>
+      <button class="btn" id="sciBackBtn">Ubah ke Bilangan Biasa</button>
+    </div>
+    <div id="sciBackResult" class="feedback good">4,5 × 10<sup>5</sup> = 450.000.</div>
+  </section>
+
+  <section class="card">
+    <h2>4. GeoGebra: Sifat Pangkat dan Bentuk Baku</h2>
+    <p>Pada GeoGebra pertama, perhatikan aturan perkalian dan pembagian pangkat dengan basis sama: pangkatnya dijumlahkan saat dikali dan dikurangkan saat dibagi. Coba cocokkan dengan hasil kalkulator pangkat di atas.</p>
+    <iframe class="geogebra" title="GeoGebra Laws of exponents" src="https://www.geogebra.org/material/iframe/id/gajdzwde" allowfullscreen></iframe>
+    <p class="muted">Sumber GeoGebra: <a href="https://www.geogebra.org/m/gajdzwde">Laws of exponents</a> (Mossel/Andre, GeoGebra Content Team), berbahasa Inggris. Kalau sematan tidak termuat karena jaringan, buka tautan itu langsung.</p>
+    <p>Pada GeoGebra kedua, geser slider untuk melihat bilangan dalam bentuk baku, lalu ubah bilangan biasa menjadi bentuk baku dan sebaliknya. Coba 7.200.000.000 dan 0,0000508.</p>
+    <iframe class="geogebra" title="GeoGebra Scientific notation" src="https://www.geogebra.org/material/iframe/id/m9d5vyvx" allowfullscreen></iframe>
+    <p class="muted">Sumber GeoGebra: <a href="https://www.geogebra.org/m/m9d5vyvx">Scientific notation</a> (Marc Azara, vicentediaz), berbahasa Inggris. Untuk bentuk akar, bahan tambahan yang sudah diverifikasi: <a href="https://www.geogebra.org/m/yzsffu5t">Radical simplification</a> (aturan hasil kali/bagi akar dan syarat bentuk sederhana) — ditautkan saja, tidak disematkan, karena halamannya terutama berisi penjelasan dan latihan applet terpisah. Simulator penyederhana akar di atas tetap bisa dipakai tanpa GeoGebra.</p>
+  </section>
+
+  <section class="card">
+    <h2>5. Contoh Kontekstual</h2>
+    <p><strong>Pertumbuhan bakteri:</strong> 1 bakteri membelah menjadi 2 setiap 20 menit. Setelah 1 jam (3 kali membelah) jumlahnya 2<sup>3</sup> = 8 bakteri; setelah 2 jam menjadi 2<sup>6</sup> = 64 bakteri.</p>
+    <p><strong>Luas dan sisi:</strong> Sebuah persegi luasnya 200 cm². Sisinya √200 = √(100 × 2) = 10√2 cm, sekitar 14,14 cm.</p>
+    <p><strong>Skala sangat kecil:</strong> Tebal sehelai rambut sekitar 0,00007 m = 7 × 10<sup>−5</sup> m. Tanpa bentuk baku, angka nolnya mudah salah hitung satu tempat.</p>
+  </section>
+
+  <section class="card no-print">
+    <h2>6. Latihan Bebas (tidak masuk riwayat)</h2>
+    <p>Jawaban berupa bilangan. Untuk soal akar yang disederhanakan, tulis koefisien di depan akar yang diminta, misalnya untuk √72 = __√2 tulis 6.</p>
+    <p id="practiceQ">Memuat soal…</p>
+    <p id="practiceWhy" style="display:none"></p>
+    <div class="row">
+      <label>Jawabanmu <input type="text" id="practiceAns" placeholder="Contoh: 32 atau 0,125"></label>
+      <button class="btn" id="checkPracticeBtn">Cek Jawaban</button>
+      <button class="btn secondary" id="newPracticeBtn">Soal Baru</button>
+    </div>
+    <div id="practiceFeedback"></div>
+  </section>
+
+  <section class="card">
+    <h2>7. Kuis Formatif B.5–B.7</h2>
+    <p>Jawab semua soal. Umpan balik muncul langsung setelah kamu memilih. Skor akhir tersimpan otomatis di perangkat ini.</p>
+    <p><strong id="quizProgress">Terjawab: 0/10</strong></p>
+    <div id="quizBox"></div>
+    <div class="row no-print">
+      <button class="btn" id="finishQuiz" disabled>Selesai &amp; Simpan Skor</button>
+      <button class="btn secondary exportBtn">Ekspor Riwayat</button>
+    </div>
+    <div id="quizResult"></div>
+    <div id="quizHistory"></div>
+  </section>
+
+  <section class="card">
+    <h2>8. Refleksi</h2>
+    <p>Tulis dengan bahasamu sendiri. Refleksi ini tersimpan di perangkatmu.</p>
+    <label for="refleksiBerpangkat">Sifat pangkat mana yang paling mudah tertukar bagimu? Kapan bentuk baku lebih membantu daripada menulis bilangan biasa?</label>
+    <textarea id="refleksiBerpangkat" placeholder="Contoh: Saya masih sering tertukar … Bentuk baku membantu saat …"></textarea>
+    <p class="muted">Pembelajaran Mendalam: berkesadaran (kamu tahu sifat mana yang masih tertukar), bermakna (contoh dari bakteri, data, dan jarak), menggembirakan (kamu mencoba, bukan hanya membaca).</p>
+  </section>
+
+  <section class="card guru-only" id="guru">
+    <h2>Panduan Guru — Bilangan Berpangkat dan Bentuk Akar</h2>
+    <div class="guru-note">
+      <p><strong>Tujuan Pembelajaran:</strong> B.5 — membaca, menulis, mengidentifikasi, menjelaskan, dan membandingkan bilangan berpangkat bulat serta menggunakannya dalam konteks kehidupan sehari-hari dan pemecahan masalah sederhana (10 JP). B.6 — mengidentifikasi, mengubah, menentukan hasil operasi hitung dan merasionalkan bentuk akar serta menyelesaikan permasalahan kontekstual yang terkait (8 JP). B.7 — mengidentifikasi dan mengubah bentuk baku serta menyelesaikan permasalahan kontekstual yang terkait (6 JP). Distribusi materi mengelompokkan ketiganya 24 JP.</p>
+      <p><strong>Miskonsepsi umum:</strong> (1) (a<sup>m</sup>)<sup>n</sup> dihitung a<sup>m+n</sup>, padahal pangkatnya dikali; (2) a<sup>m</sup> × a<sup>n</sup> dihitung a<sup>m×n</sup>, padahal pangkatnya dijumlah; (3) a<sup>0</sup> dianggap 0, padahal 1 (untuk a ≠ 0); (4) pangkat negatif dianggap hasilnya negatif, padahal a<sup>−n</sup> = 1/a<sup>n</sup> yang positif bila a positif; (5) √a + √b dianggap √(a + b); (6) bentuk akar sejenis dijumlahkan dengan mengalikan akarnya, misalnya 2√3 + 5√3 dianggap 7√6; (7) merasionalkan dengan sekadar menghilangkan tanda akar dari penyebut tanpa mengalikan pembilangnya juga; (8) bentuk baku ditulis dengan koefisien ≥ 10, misalnya 72 × 10<sup>−4</sup> padahal yang benar 7,2 × 10<sup>−3</sup>.</p>
+      <p><strong>Diferensiasi:</strong> dasar — menghitung pangkat, akar kuadrat sempurna, dan mengubah bilangan besar/kecil ke bentuk baku dengan panduan; menengah — sifat-sifat pangkat, menyederhanakan bentuk akar, dan merasionalkan penyebut sederhana; lanjut — operasi campuran pangkat dan akar, merasionalkan penyebut dua suku bila guru menginginkannya, dan soal kontekstual multi-langkah (pertumbuhan, skala, jarak).</p>
+      <p><strong>Asesmen:</strong> observasi saat eksplorasi GeoGebra dan simulator, latihan bebas, kuis formatif 10 soal, dan refleksi siswa. Target ketuntasan: [PERLU DIISI GURU], seperti di prototipe — jangan dikarang.</p>
+    </div>
+    <div class="row no-print"><button class="btn secondary printBtn">Cetak LKPD / Halaman Ini</button></div>
+    <p class="muted">LKPD cetak: cetak halaman ini, lalu minta siswa mengerjakan bagian GeoGebra dan refleksi di buku atau lembar terpisah bila perangkat terbatas.</p>
+  </section>
+  <p class="card siswa-only-note muted">Bagian Panduan Guru hanya tampil dalam Mode Guru. Aktifkan Mode Guru di atas untuk melihatnya.</p>
+</main>
+
+<footer>
+  <p><a href="index.html">← Kembali ke Beranda MPI</a> &middot; Sumber ATP: MGMP Matematika SMP Kab. Lampung Tengah 2026/2027.</p>
+</footer>
+<script src="assets/js/berpangkat.js"></script>
+</body>
+</html>
