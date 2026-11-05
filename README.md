@@ -20,7 +20,7 @@ pendekatan Pembelajaran Mendalam. Situs statis, siap untuk GitHub Pages.
     Bilangan Rasional = 16 JP dan Aritmetika Sosial = 12 JP.
 - `assets/css/style.css`, `assets/js/main.js` (beranda dan Bilangan Bulat),
   dan `assets/js/rasional.js` (Bilangan Rasional) — tampilan dan logika.
-- Kelas 8 Semester 1 (lokal, belum di-push):
+- Kelas 8 Semester 1 (live sejak 2026-11-05):
   - `bilangan-berpangkat-akar.html` + `assets/js/berpangkat.js` — **B.5, B.6, B.7**
     (24 JP; tidak ada konflik JP: 10 + 8 + 6 = 24). GeoGebra terverifikasi:
     Laws of exponents (gajdzwde), Scientific notation (m9d5vyvx);
